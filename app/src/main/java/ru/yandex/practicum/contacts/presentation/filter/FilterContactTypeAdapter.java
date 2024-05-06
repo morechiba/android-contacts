@@ -35,9 +35,6 @@ public class FilterContactTypeAdapter extends RecyclerView.Adapter<FilterContact
     }
 
 
-    ;
-
-
     private final AsyncListDiffer<FilterContactTypeUi> differ = new AsyncListDiffer<>(
             new AdapterListUpdateCallback(this),
             new AsyncDifferConfig.Builder<>(new BaseListDiffCallback<FilterContactTypeUi>()).build()
