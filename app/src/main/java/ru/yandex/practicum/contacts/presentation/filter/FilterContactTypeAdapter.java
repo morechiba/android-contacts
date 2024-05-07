@@ -26,14 +26,7 @@ import ru.yandex.practicum.contacts.presentation.sort.SortTypeUI;
 import ru.yandex.practicum.contacts.utils.model.ContactTypeUtils;
 import ru.yandex.practicum.contacts.utils.model.FilterContactTypeUtils;
 
-public class FilterContactTypeAdapter extends RecyclerView.Adapter<FilterContactTypeAdapter.ViewHolder> implements ListDiffInterface<FilterContactTypeUi> {
-    private FilterContactType contactType;
-
-    @Override
-    public boolean theSameAs(FilterContactTypeUi f){
-        return this.contactType== f.getContactType();
-    }
-
+public class FilterContactTypeAdapter extends RecyclerView.Adapter<FilterContactTypeAdapter.ViewHolder> {
 
     private final AsyncListDiffer<FilterContactTypeUi> differ = new AsyncListDiffer<>(
             new AdapterListUpdateCallback(this),
